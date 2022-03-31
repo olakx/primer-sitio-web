@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+
+/*Header Todas las paginas*/
+html{
+    background-color: #E0EEF9;
+}
+
+header{
+    background-color: #25252A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.header__logo{
+    display: flex;
+    justify-content:center;
+}
+
+.header__logo h1{
+    align-self: center;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__redireccion{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    list-style: none;
+}
+
+.header__listas li{
+    display: inline-block;
+    padding: 0px 40px;
+    font-size:  20px ;
+    background-color: whitesmoke;
+}
+
+
+/*Header todas las paginas*/
+
+
+
+
+
+/*Main Pagina Tickets*/
+
+.main-tickets h3{
+    display: inline-block;
+    border: outset 1px black;
+}
+
+/*Main Pagina Tickets*/
+
+
+
+
+
+/*Footer todas las paginas*/
+
+.footer{
+    background-color: #25252A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.footer__fondo{
+    text-align: center;
+}
+
+.footer__fondo img{
+    width: 800px;
+    height: 600px;
+}
+
+.footer__nombreform{
+    text-align: center;
+}
+
+.footer__emailform{
+    text-align: center;
+}
+
+.footer__textform{
+    text-align: center;
+}
+
+.footer__enviarboton{
+    text-align: center;
+}
+
+.footer__redes{
+    text-align: center;
+}
+
+.footer h4{
+    text-align: center;
+}
+
+.footer__boton{
+    text-align: center;
+}
+
+.footer__redes{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Footer todas las paginas*/
