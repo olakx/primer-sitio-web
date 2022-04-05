@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheFest 2022</title>
+    <!--codigo para logos-->
+    <script src="https://kit.fontawesome.com/8093fbb08a.js" crossorigin="anonymous"></script>
+    <!--Animaciones-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Fuente de letra-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
@@ -19,7 +24,9 @@
             <a href="index.html"><img src="resources/Logo.jpg" alt="logo"class="header__logoimg"></a>
             <h1 class="header__titulo">TheFest</h1>
         </div>
-
+        <div class="header__menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="header__redireccion">
             <ul class="header__listas">
                 <li><a href="index.html"class="header__inicio">Inicio</a></li>
@@ -50,45 +57,45 @@
     </nav>
 </header>
 
-<main>
+<main class="main-index">
     <section>
-        <article>
+        <article class="main-index__artciulovid">
             <div class="fondoloop">
-                <iframe width="370" height="300" src="https://www.youtube.com/embed/araK9j8mN9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/araK9j8mN9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>  
-            <div class="playvideo">
-            <div>
+            <div class="main-index__descripcionvid">
                 <h4>Vive una nueva experiencia con gente de todo el pais en la fiesta mas grande de argentina</h4>
-            </div>
-                <h4>TheFest 2021 Aftermovie</h4>
-                <iframe width="370" height="300" src="https://www.youtube.com/embed/Q0nhJ3_fpIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div class="main-index__superponer">
+                <h4>TheFest 2021 Aftermovie</h4> 
             </div>
         </article>
-        <article>
-            <div class="info">
+        <article class="main-index__pasesinfo">
+            <div class="main-index__vendidos">
                 <h3>TheFest 2022 Sold out</h3>
                 <p>La lista de espera oficial de TheFest 2022 esta disponible en tu cuenta en el excepcional caso de que nuevos tickets esten disponbibles de nuevo</p>
                 <a href="pages/mi-cuenta.html">Ir a mi cuenta</a>
             </div>
-            <div class="pases">
-                <p>Pase de 7 dias</p>
-                <p>Alojamiento no incluido</p>
-                <h3>Agotadas</h3>
+            <div class="main-index__pases">
+                <div>
+                    <p>Pase de 7 dias</p>
+                    <h4>Alojamiento no incluido</h4>
+                    <h3>Agotadas</h3>
+                </div>
+                <div>
+                    <p>Pase de 1 dia</p>
+                    <h4>Alojamiento no incluido</h4>
+                    <h3>Agotadas</h3>
+                </div>
+                <div>
+                    <p>Pack de pase de 7 dias</p>
+                    <h4>Alojamiento incluido</h4>
+                    <h3>Agotadas</h3>
+                </div>
             </div>
-            <div class="pases">
-                <p>Pase de 1 dia</p>
-                <p>23/24/25 de marzo</p>
-                <h3>Agotadas</h3>
-            </div>
-            <div class="pases">
-                <p>Pack de pase de 7 dias</p>
-                <p>Alojamiento incluido</p>
-                <h3>Agotadas</h3>
-            </div>
-            <div>
+            <div class="main-index__tituloinfo">
                 <h4>Que es TheFest?</h4>
             </div>
-            <div>
+            <div class="main-index__info">
                 <p>TheFest es una festival de musica electronica donde se reunen los mejores djs del mundo para tocar, cambiando la sede donde se festeja cada año haciendolo una nueva experiencia cada año.
                 La duracion del festival suelen ser unos 9 dias a no ser que se presente algun problema ajeno a la organizacion.</p>
             </div>
@@ -97,9 +104,6 @@
 </main>
 
 <footer class="footer">
-        <div class="footer__fondo">
-            <img class="footer__fondoimg" src="resources/wallpaperbetter.com_800x600.jpg" alt="festival">
-        </div>
         
         <form class="footer__form">
             <div class="footer__nombreform">
@@ -114,8 +118,8 @@
                 <label for="textarea-form">Consulta</label><br>
                 <textarea name="textarea-form" id="textarea-form" cols="30" rows="10" placeholder="Consulta"></textarea>
             </div>
-            <div class="footer__enviarboton">
-                <input type="submit" class="footer_enviarboton" placeholder="Enviar">
+            <div class="footer__boton">
+                <input type="submit" class="footer_boton" placeholder="Enviar">
             </div>  
         </form>
 
