@@ -23,7 +23,7 @@ html{
 
 
 header{
-    background-color: #25252A;
+    background-image: linear-gradient(to top, #434343 0%, black 100%);
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
 }
@@ -207,6 +207,8 @@ header{
     color: rgb(255, 166, 0);
     font-weight: 600;
     border: none;
+    animation: zoomIn;
+    animation-duration: 3s;
 }
 
 .main-tickets__titulovip{
@@ -215,6 +217,8 @@ header{
     color: rgb(255, 166, 0);
     font-weight: 600;
     border: none;
+    animation: zoomIn;
+    animation-duration: 3s;
 }
 
 .main-tickets__ticketlista ul{
@@ -238,6 +242,10 @@ header{
     color: #bbb;
     margin-top: 2px;  
     border-radius: 2px;
+    animation: slideInLeft;
+    animation-duration: 3s;
+    
+    
 }
 
 .main-tickets__ticketlista ul input{
@@ -257,7 +265,7 @@ header{
     width: 160px;
     justify-content: center;
     border-color: #fd2274;
-}
+
 
 .main-tickets__ticketlista ul input:hover{
     background-color: rgba(103, 10, 224, 0.952);
@@ -289,7 +297,7 @@ header{
 
 
 .footer{
-    background-color: #25252A;
+    background-image: linear-gradient(to bottom, #434343 0%, black 100%);
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     color: #ccc;
