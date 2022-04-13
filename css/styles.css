@@ -3,13 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
-    font-weight: 600;
-    
-}
+    font-weight: 200;   
+} 
 
 img{
-    width: 50px;
-    height: 50px;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 
@@ -24,7 +23,6 @@ header{
     background-color: #25252A;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    margin-bottom: 50px;
 }
 
 .header__logo{
@@ -38,30 +36,30 @@ header{
     font-size: 20px;
 }
 
-.header__menu-bar{
+.header__menu-barra{
     display: none;
+    color: black;
 }
 
 .header__nav{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__redireccion{
+.header__redireccion ul{
     display: flex;
-    width: 800px;
+    width: 100%;
+    height: auto;
     justify-content: center;
     list-style: none;
 }
 
 .header__listas li{
     display: inline-block;
-    padding: 0px 40px;
-    font-size:  15px ;
-    background: none;
+    padding: 0px 20px;
+    font-size:  15px;
+    padding-top: 0.15rem;
 }
 
 .header__listas li a{
@@ -69,10 +67,16 @@ header{
     cursor: pointer;
     transition-property: all;
     transition-duration: 0s;
+    text-decoration: none;
 }
 
 .header__listas li a:hover{
     color: #fff;
+}
+
+
+.header__redes a{
+    text-decoration: none;
 }
 
 
@@ -134,33 +138,27 @@ header{
 
 
 .main-tickets__titulogeneral h2{
-    border: solid 1px black;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     color: rgb(255, 166, 0);
-    font-family: sans-serif;
     font-weight: 600;
-    background: none;
     border: none;
 }
 
 .main-tickets__titulovip{
     text-align: center;
-    border: solid 1px black;
     font-size: 15px;
     color: rgb(255, 166, 0);
-    font-family: sans-serif;
     font-weight: 600;
-    background: none;
     border: none;
 }
 
 .main-tickets__ticketlista ul{
     display: grid;
-    grid-area: "li input
-                li input
-                li input
-                ;
+    grid-template-areas: " li input"
+                         " li input"
+                         " li input"
+                         " li input";
     justify-content: center;
     column-gap: 266px;
 }
@@ -195,12 +193,16 @@ header{
     width: 160px;
     justify-content: center;
     border-color: #fd2274;
-    
 }
 
 .main-tickets__ticketlista ul input:hover{
     background-color: rgba(103, 10, 224, 0.952);
 
+}
+
+.main-tickets__seccion-vip ul{
+    display: grid;
+    grid-template-areas: "li input";
 }
 
 /*Main Pagina Tickets*/
@@ -241,8 +243,9 @@ header{
     text-align: center;
 }
 
-.footer h4{
+.footer h6{
     text-align: center;
+    margin: 0%;
 }
 
 .footer__redes{
@@ -261,7 +264,7 @@ header{
 
 
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 540px){
 *{
    font-size: 15px;
    font-weight: 600;
@@ -288,7 +291,7 @@ header{
     display: none;
 }
 
-.header__menu-bar{
+.header__menu-barra{
     display: block;
     text-align: center;
     font-size: 50px;
@@ -333,26 +336,29 @@ header{
 
 .main-tickets__ticketlista ul{
     column-gap: 20%;
+    font-size: 95%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .main-tickets__ticketlista ul li{
-    font-size: 100%;
     width: 80%;
-    margin-left: 5%;
+    align-self: center;
 }
 
 .main-tickets__ticketlista ul input{
-    font-size: 100%;
+    margin-bottom: 5%;
     width: 80%;
+    align-self: center;
 }
-
 
         /*MAIN TICKETS*/
 }
 
 
 
-@media (min-width: 521px) and (max-width: 900px){
+@media (min-width: 541px) and (max-width: 924px){
     *{
         font-size: 20px;
         font-weight: 600;
@@ -379,7 +385,7 @@ header{
         display: none;
     }
      
-    .header__menu-bar{
+    .header__menu-barra{
         display: block;
         text-align: center;
         font-size: 50px;
@@ -448,7 +454,7 @@ header{
 
 
 
-@media (min-width: 901px) and (max-width: 1200px){
+@media (min-width: 925px) and (max-width: 1200px){
     *{
         font-size: 18px;
         font-weight: 600;
@@ -481,9 +487,13 @@ header{
      
     .header__redes{
         display: flex;
+        justify-content: end;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
     }
      
-    .header__menu-bar{
+    .header__menu-barra{
         display: none;
     }
      

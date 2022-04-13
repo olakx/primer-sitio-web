@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheFest 2022</title>
+    <title>Sobre nosotros</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="libs/Bootstrap/css/bootstrap.min.css">
     <!--codigo para logos-->
     <script src="https://kit.fontawesome.com/8093fbb08a.js" crossorigin="anonymous"></script>
     <!--Animaciones-->
@@ -18,13 +20,13 @@
 </head>
 
 <body>
-<header class="header">
+<header>
     <nav class="header__nav">
         <div class="header__logo">
-            <a href="index.html"><img src="resources/Logo.jpg" alt="logo"class="header__logoimg"></a>
+            <a href="index.html"><img src="resources//logos/Logo.jpg" alt="logo"class="header__logoimg"></a>
             <h1 class="header__titulo">TheFest</h1>
         </div>
-        <div class="header__menu-bar">
+        <div class="header__menu-barra">
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="header__redireccion">
@@ -33,29 +35,30 @@
                 <li><a href="pages/tickets.html"class="header__tickets">Tickets</a></li>
                 <li><a href="pages/tienda.html"class="header__tienda">Tienda</a></li>
                 <li><a href="pages/lineup.html"class="header__lineup">Lineup</a></li>
-                <li><a href="pages/mi-cuenta.html"class="header__micuenta">Mi cuenta</a></li>
+                <li><a href="pages/mi-cuenta.html"class="header__micuenta">Sobre nosotros</a></li>
             </ul>
         </div>
    
         <div class="header__redes">
             <a href="https://www.instagram.com/" target="_black">
-                <img src="resources/Instagram_logo_2016.svg.png" alt="instagram" class="header__instagram"/>
+                <img src="resources/social/Instagram_logo_2016.svg.png" alt="instagram" class="header__instagram"/>
             </a>    
             <a href="https://www.facebook.com/" target="_black">
-                <img src="resources/fb_icon_325x325.png" alt="facebook"class="header__facebook"/>
+                <img src="resources/social/fb_icon_325x325.png" alt="facebook"class="header__facebook"/>
             </a>
             <a href="https://www.youtube.com" target="_black" >
-                <img src="resources/YouTube_full-color_icon_(2017).svg.png" alt="youtube" class="header__youtube"/>
+                <img src="resources/social/YouTube_full-color_icon_(2017).svg.png" alt="youtube" class="header__youtube"/>
             </a>
             <a href="https://www.twitter.com" target="_black">
-                <img src="resources/twitter-bird-white-on-blue.png" alt="twitter" class="header__twitter"/>
+                <img src="resources/social/twitter-bird-white-on-blue.png" alt="twitter" class="header__twitter"/>
             </a>
             <a href="https://twitch.tv" target="_black">
-                <img src="resources/twitch-tv-logo-51C922E0F0-seeklogo.com.png" class="header__twitch"/>
+                <img src="resources/social/twitch-tv-logo-51C922E0F0-seeklogo.com.png" alt="twitch" class="header__twitch"/>
             </a>
         </div>
     </nav>
 </header>
+
 
 <main class="main-index">
     <section>
@@ -64,36 +67,36 @@
                 <iframe src="https://www.youtube.com/embed/araK9j8mN9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>  
             <div class="main-index__descripcionvid">
-                <h4>Vive una nueva experiencia con gente de todo el pais en la fiesta mas grande de argentina</h4>
+                <h5>Vive una nueva experiencia con gente de todo el pais en la fiesta electronica mas grande de argentina</h5>
             </div class="main-index__superponer">
-                <h4>TheFest 2021 Aftermovie</h4> 
+                <h5>TheFest 2021 </h5> 
             </div>
         </article>
         <article class="main-index__pasesinfo">
             <div class="main-index__vendidos">
-                <h3>TheFest 2022 Sold out</h3>
+                <h4 >TheFest 2022 Sold out</h4>
                 <p>La lista de espera oficial de TheFest 2022 esta disponible en tu cuenta en el excepcional caso de que nuevos tickets esten disponbibles de nuevo</p>
                 <a href="pages/mi-cuenta.html">Ir a mi cuenta</a>
             </div>
             <div class="main-index__pases">
                 <div>
                     <p>Pase de 7 dias</p>
-                    <h4>Alojamiento no incluido</h4>
-                    <h3>Agotadas</h3>
+                    <h6>Alojamiento no incluido</h5>
+                    <h5>Agotadas</h3>
                 </div>
                 <div>
                     <p>Pase de 1 dia</p>
-                    <h4>Alojamiento no incluido</h4>
-                    <h3>Agotadas</h3>
+                    <h6>Alojamiento no incluido</h6>
+                    <h5>Agotadas</h3>
                 </div>
                 <div>
                     <p>Pack de pase de 7 dias</p>
-                    <h4>Alojamiento incluido</h4>
-                    <h3>Agotadas</h3>
+                    <h6>Alojamiento incluido</h4>
+                    <h5>Agotadas</h5>
                 </div>
             </div>
             <div class="main-index__tituloinfo">
-                <h4>Que es TheFest?</h4>
+                <h5>Que es TheFest?</h5>
             </div>
             <div class="main-index__info">
                 <p>TheFest es una festival de musica electronica donde se reunen los mejores djs del mundo para tocar, cambiando la sede donde se festeja cada año haciendolo una nueva experiencia cada año.
@@ -102,6 +105,8 @@
         </article>
     </section>
 </main>
+
+
 
 <footer class="footer">
         
@@ -116,7 +121,7 @@
             </div>
             <div class="footer__textform">
                 <label for="textarea-form">Consulta</label><br>
-                <textarea name="textarea-form" id="textarea-form" cols="30" rows="10" placeholder="Consulta"></textarea>
+                <textarea name="textarea-form" class="textarea-form" cols="23" rows="10" placeholder="Consulta"></textarea>
             </div>
             <div class="footer__boton">
                 <input type="submit" class="footer_boton" placeholder="Enviar">
@@ -125,24 +130,25 @@
 
         <div class="footer__redes">
             <a href="https://www.instagram.com/"    target="_black">
-                <img src="resources/Instagram_logo_2016.svg.png" alt="instagram"/ class="footer__instagram">
+                <img src="resources/social/Instagram_logo_2016.svg.png" alt="instagram"/ class="footer__instagram">
             </a>    
             <a href="https://www.facebook.com/" target="_black">
-                <img src="resources/fb_icon_325x325.png" alt="facebook" class="footer__facebook"/>
+                <img src="resources/social/fb_icon_325x325.png" alt="facebook" class="footer__facebook"/>
             </a>
             <a href="https://www.youtube.com" target="_black">
-                <img src="resources/YouTube_full-color_icon_(2017).svg.png" alt="youtube" class="footer__youtube"/>
+                <img src="resources/social/YouTube_full-color_icon_(2017).svg.png" alt="youtube" class="footer__youtube"/>
             </a>
             <a href="https://www.twitter.com" target="_black">
-                <img src="resources/twitter-bird-white-on-blue.png" alt="twitter" class="footer__twitter"/>
+                <img src="resources/social/twitter-bird-white-on-blue.png" alt="twitter" class="footer__twitter"/>
             </a>
             <a href="https://twitch.tv" target="_black">
-                <img src="resources/twitch-tv-logo-51C922E0F0-seeklogo.com.png" class="footer__twitch"/>
+                <img src="resources/social/twitch-tv-logo-51C922E0F0-seeklogo.com.png" class="footer__twitch"/>
             </a>
         </div>
         <div class="footer__derechos">
-            <h4>@TheFest2022 Todos los derechos reservados</h4>
+            <h6>@TheFest2022 Todos los derechos reservados</h4>
         </div>
 </footer>
+<script src="libs/Bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>
