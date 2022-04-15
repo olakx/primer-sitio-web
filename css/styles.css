@@ -1,379 +1,332 @@
 body {
-    font-family: "AktivGrotesk-Regular",sans-serif;
-    font-size: 100%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-    font-weight: 200;   
-} 
-
-img{
-    height: 2.5rem;
-    width: 2.5rem;
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  font-size: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+}
 
-html{
-    background-color: #E0EEF9;
+img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+html {
+  background-color: #E0EEF9;
 }
 
 /*Header Todas las paginas*/
-
-
-header{
-    background-color: #1c1c1d;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+header {
+  background-color: #1c1c1d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
 
-.header__logo{
-    display: flex;
-    align-items: center;
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo h1 {
+  color: #ccc;
+  font-size: 20px;
 }
 
-.header__logo h1{
-    color: #ccc;
-    font-size: 20px;
+.header__menu-barra {
+  display: none;
+  color: black;
+  align-self: center;
 }
 
-.header__menu-barra{
-    display: none;
-    color: black;
-    align-self: center;
+.header__nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-.header__nav{
-    display: flex;
-    justify-content: space-between;
+.header__redireccion ul {
+  display: flex;
+  width: 100%;
+  height: auto;
+  list-style: none;
 }
 
-.header__redireccion ul{
-    display: flex;
-    width: 100%;
-    height: auto;
-    list-style: none;
+.header__listas li {
+  padding: 0px 20px;
+  font-size: 15px;
+  padding-top: 0.15rem;
+}
+.header__listas a {
+  color: #ccc;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0s;
+  text-decoration: none;
+}
+.header__listas a:hover {
+  color: #fff;
 }
 
-.header__listas li{
-    padding: 0px 20px;
-    font-size:  15px;
-    padding-top: 0.15rem;
+.header__redes a {
+  text-decoration: none;
 }
-
-.header__listas li a{
-    color: #ccc;
-    cursor: pointer;
-    transition-property: all;
-    transition-duration: 0s;
-    text-decoration: none;
-}
-
-.header__listas li a:hover{
-    color: #fff;
-}
-
-
-.header__redes a{
-    text-decoration: none;
-}
-
 
 /*Header todas las paginas*/
+/*MAIN INDEX */
+.index__contenido {
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+.index__contenido h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  opacity: 1;
+}
+.index__contenido p {
+  font-size: 1rem;
+  text-align: center;
+  color: #f3f3f3;
+  font-weight: 900;
+  opacity: 1;
+}
+.index__contenido a {
+  display: inline-block;
+  border: none;
+  height: 50px;
+  border-radius: 30px;
+  padding: 10px 0;
+  width: 200px;
+  background-color: #f5be09;
+  font-size: 0.8rem;
+  color: #0f0f0f;
+  font-weight: 800;
+  transition: 150ms;
+  margin-top: 40px;
+  text-decoration: none;
+  opacity: 1;
+}
+.index__contenido a:hover {
+  transform: translate(0, -5px);
+  opacity: 1;
+}
 
+.index__artciulovid {
+  min-height: 100vh;
+  position: relative;
+}
+.index__artciulovid video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.index__capa {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+}
+
+.index__vendidos {
+  text-align: center;
+  margin-top: 100px;
+}
+.index__vendidos a {
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0s;
+  text-decoration: none;
+  color: #202bbe;
+}
+.index__vendidos a:hover {
+  color: #fd2274;
+}
+
+.index__pases {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.index__tituloinfo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.index__info {
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
 
 /*MAIN INDEX */
-
-
-.index__contenido{
-    padding-top: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    margin:auto;
-    position: relative;
-    z-index: 2;
-}
-.index__contenido h2{
-    font-size: 3rem;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 700;
-    opacity: 1;
-}
-.index__contenido p{
-    font-size: 1rem;
-    text-align: center;
-    color: #f3f3f3;
-    font-weight: 900;
-    opacity: 1;
-}
-
-.index__contenido a{
-    display: inline-block;
-    border: none;
-    height: 50px;
-    border-radius: 30px;
-    padding: 10px 0;
-    width: 200px;
-    background-color: #f5be09;
-    font-size: 0.8rem;
-    color: #0f0f0f;
-    font-weight: 800;
-    transition: 150ms;
-    margin-top: 40px;
-    text-decoration: none;
-    opacity: 1;
-}
-
-.index__contenido a:hover{
-    transform: translate(0, -5px);
-    opacity: 1;
-}
-.index__artciulovid{
-    min-height: 100vh;
-    position: relative;
-}
-
-.index__artciulovid video{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.index__capa{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background: #1c1c1d;
-    opacity: 0.5;
-}
-
-.index__vendidos{
-    text-align: center;
-    margin-top: 100px;
-}
-
-.index__vendidos a{
-    cursor: pointer;
-    transition-property: all;
-    transition-duration: 0s;
-    text-decoration: none;
-    color: #202bbe;
-}
-
-.index__vendidos a:hover{
-    color: #fd2274;
-}
-
-.index__pases{
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    margin-top: 50px;
-    justify-items: center;
-}
-
-.index__tituloinfo{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.index__info{
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-
-/*MAIN INDEX */
-
-
 /*Main Pagina Tickets*/
-
-
-.tickets__titulogeneral h2{
-    text-align: center;
-    font-size: 35px;
-    color: rgb(255, 166, 0);
-    font-weight: 600;
-    border: none;
-    animation: zoomIn;
-    animation-duration: 3s;
+.tickets__titulogeneral h2 {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 166, 0);
+  font-weight: 600;
+  border: none;
+  animation: zoomIn;
+  animation-duration: 3s;
 }
 
-.tickets__titulovip{
-    text-align: center;
-    font-size: 15px;
-    color: rgb(255, 166, 0);
-    font-weight: 600;
-    border: none;
-    animation: zoomIn;
-    animation-duration: 3s;
+.tickets__titulovip {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(255, 166, 0);
+  font-weight: 600;
+  border: none;
+  animation: zoomIn;
+  animation-duration: 3s;
 }
 
-.tickets__ticketlista ul{
-    display: grid;
-    grid-template-areas: " li input"
-                         " li input"
-                         " li input"
-                         " li input";
-    justify-content: center;
-    column-gap: 266px;
+.tickets__ticketlista ul {
+  display: grid;
+  grid-template-areas: " li input" " li input" " li input" " li input";
+  justify-content: center;
+  column-gap: 266px;
 }
 
-.tickets__ticketlista ul li{
-    display: flex;
-    grid-column: 1/2;
-    font-size: 20px;
-    border: solid 1px black;
-    width: 255px;
-    background-color: rgba(0, 0, 0, 0.836);
-    justify-content: center;
-    color: #bbb;
-    margin-top: 2px;  
-    border-radius: 2px;
-    animation: slideInLeft;
-    animation-duration: 3s;
-    
-    
+.tickets__ticketlista ul li {
+  display: flex;
+  grid-column: 1/2;
+  font-size: 20px;
+  border: solid 1px black;
+  width: 255px;
+  background-color: rgba(0, 0, 0, 0.836);
+  justify-content: center;
+  color: #bbb;
+  margin-top: 2px;
+  border-radius: 2px;
+  animation: slideInLeft;
+  animation-duration: 3s;
 }
 
-.tickets__ticketlista ul input{
-    grid-column: 2/3;
-    font-family: sans-serif;
-    display: flex;
-    font-size: 16px;
-    font-weight: 600;
-    background: black;
-    border: solid 2px black;
-    color: #fd2274;
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition-property:background-color;
-    transition-duration: 1s;
-    width: 160px;
-    justify-content: center;
-    border-color: #fd2274;
+.tickets__ticketlista ul input {
+  grid-column: 2/3;
+  font-family: sans-serif;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  background: black;
+  border: solid 2px black;
+  color: #fd2274;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 1s;
+  width: 160px;
+  justify-content: center;
+  border-color: #fd2274;
 }
 
-.tickets__ticketlista ul input:hover{
-    background-color: rgba(103, 10, 224, 0.952);
-
+.tickets__ticketlista ul input:hover {
+  background-color: rgba(103, 10, 224, 0.952);
 }
 
-.tickets__seccion-vip ul{
-    display: grid;
-    grid-template-areas: "li input";
+.tickets__seccion-vip ul {
+  display: grid;
+  grid-template-areas: "li input";
 }
 
 /*Main Pagina Tickets*/
+/*Main Pagina TIENDA*/
+/*Main Pagina TIENDA*/
+/*Main Pagina LINEUP*/
+.lineup__img {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
 
+/*Main Pagina LINEUP*/
+/*Footer todas las paginas*/
+.footer {
+  background-color: #1c1c1d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: #ccc;
+  margin-top: 100px;
+}
 
+.footer__nombreform {
+  text-align: center;
+}
 
+.footer__emailform {
+  text-align: center;
+}
 
-/*Main Pagina Lineup*/
+.footer__textform {
+  text-align: center;
+}
 
+.footer__boton {
+  text-align: center;
+}
 
+.footer__redes {
+  text-align: center;
+}
 
-/*Main Pagina Lineup*/
+.footer h6 {
+  text-align: center;
+  margin: 0%;
+}
 
-
-
-
+.footer__redes {
+  display: flex;
+  justify-content: center;
+}
 
 /*Footer todas las paginas*/
-
-
-
-.footer{
-    background-color: #1c1c1d;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    color: #ccc;
-    margin-top: 100px;
-}
-
-.footer__nombreform{
-    text-align:center;
-
-}
-
-
-.footer__emailform{
-    text-align: center;
-}
-
-.footer__textform{
-    text-align: center;
-}
-
-.footer__boton{
-    text-align: center;
-}
-
-.footer__redes{
-    text-align: center;
-}
-
-.footer h6{
-    text-align: center;
-    margin: 0%;
-}
-
-.footer__redes{
-    display: flex;
-    justify-content: center;
-}
-
-
-/*Footer todas las paginas*/
-
-
-
 /* RESPONSIVE SITIO WEB*/
+@media screen and (max-width: 540px) {
+  * {
+    font-size: 15px;
+    font-weight: 600;
+  }
 
-
-
-
-
-@media screen and (max-width: 540px){
-*{
-   font-size: 15px;
-   font-weight: 600;
-}
-
-
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-.header__nav{
+  /*HEADER TODAS LAS PAGINAS*/
+  .header__nav {
     position: relative;
-}
+  }
 
-.header__redireccion {
+  .header__redireccion {
     display: none;
-}
+  }
 
-.header__logo h1{
+  .header__logo h1 {
     font-size: 90%;
     margin-left: 5%;
-}
+  }
 
-.header__redes{
+  .header__redes {
     display: none;
-}
+  }
 
-.header__menu-barra{
+  .header__menu-barra {
     display: block;
     text-align: center;
     font-size: 50px;
@@ -381,235 +334,185 @@ header{
     justify-content: center;
     align-content: center;
     margin-right: 10%;
-}
+  }
 
-
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-
-        /*MAIN INDEX*/
-
-.index__contenido a{
+  /*HEADER TODAS LAS PAGINAS*/
+  /*MAIN INDEX*/
+  .index__contenido a {
     display: flex;
     justify-content: center;
     font-size: 100%;
-}
+  }
 
-
-.index__info {
+  .index__info {
     position: relative;
-}
-    
-        /*MAIN INDEX*/
+  }
 
-
-        /*MAIN TICKETS*/
-
-.tickets__titulogeneral h2{
+  /*MAIN INDEX*/
+  /*MAIN TICKETS*/
+  .tickets__titulogeneral h2 {
     font-size: 25px;
-}
+  }
 
-.tickets__titulovip h2{
+  .tickets__titulovip h2 {
     font-size: 25px;
-}
+  }
 
-.tickets__ticketlista ul{
+  .tickets__ticketlista ul {
     column-gap: 20%;
     font-size: 95%;
     display: flex;
     flex-direction: column;
-    
-}
+  }
 
-.tickets__ticketlista ul li{
+  .tickets__ticketlista ul li {
     width: 80%;
     align-self: center;
-}
+  }
 
-.tickets__ticketlista ul input{
+  .tickets__ticketlista ul input {
     margin-bottom: 5%;
     width: 80%;
     align-self: center;
+  }
+
+  /*MAIN TICKETS*/
+}
+@media (min-width: 541px) and (max-width: 924px) {
+  * {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /*HEADER TODAS LAS PAGINAS*/
+  .header__nav {
+    position: relative;
+  }
+
+  .header__redireccion {
+    display: none;
+  }
+
+  .header__logo h1 {
+    font-size: 90%;
+    margin-left: 5%;
+  }
+
+  .header__redes {
+    display: none;
+  }
+
+  .header__menu-barra {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10%;
+  }
+
+  /*HEADER TODAS LAS PAGINAS*/
+  /*MAIN INDEX*/
+  .index__info {
+    position: relative;
+  }
+
+  /*MAIN INDEX*/
+  /*MAIN TICKETS*/
+  .tickets__titulogeneral h2 {
+    font-size: 25px;
+  }
+
+  .tickets__titulovip h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .tickets__ticketlista ul {
+    column-gap: 20%;
+  }
+
+  .tickets__ticketlista ul li {
+    font-size: 100%;
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  .tickets__ticketlista ul input {
+    font-size: 100%;
+    width: 100%;
+  }
+
+  /*MAIN TICKETS*/
+}
+@media (min-width: 925px) and (max-width: 1200px) {
+  * {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /*HEADER TODAS LAS PAGINAS*/
+  .header__nav {
+    position: relative;
+  }
+
+  .header__redireccion {
+    display: flex;
+    justify-content: left;
+    width: auto;
+  }
+
+  .header__redireccion li {
+    padding: 20px;
+  }
+
+  .header__logo h1 {
+    font-size: 90%;
+    margin-left: 5%;
+  }
+
+  .header__redes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header__menu-barra {
+    display: none;
+  }
+
+  /*HEADER TODAS LAS PAGINAS*/
+  /*MAIN INDEX*/
+  .index__contenido a {
+    display: flex;
+    justify-content: center;
+    font-size: 90%;
+  }
+
+  .index__info {
+    position: relative;
+  }
+
+  /*MAIN INDEX*/
+  /*MAIN TICKETS*/
+  /*MAIN TICKETS*/
+}
+@media (min-width: 1201px) {
+  * {
+    font-size: 20px;
+  }
+
+  /*MAIN INDEX*/
+  .index__contenido a {
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+  }
+
+  /*MAIN INDEX*/
 }
 
-        /*MAIN TICKETS*/
-}
-
-
-
-@media (min-width: 541px) and (max-width: 924px){
-    *{
-        font-size: 20px;
-        font-weight: 600;
-    }
-     
-     
-        /*HEADER TODAS LAS PAGINAS*/
-     
-     
-    .header__nav{
-        position: relative;
-    }
-     
-    .header__redireccion {
-        display: none;
-    }
-     
-    .header__logo h1{
-        font-size: 90%;
-        margin-left: 5%;
-    }
-     
-    .header__redes{
-        display: none;
-    }
-     
-    .header__menu-barra{
-        display: block;
-        text-align: center;
-        font-size: 50px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-right: 10%;
-    }
-     
-     
-        /*HEADER TODAS LAS PAGINAS*/
-     
-
-
-
-     
-        /*MAIN INDEX*/
-     
-
-    .index__info {
-        position: relative;
-    }
-         
-        /*MAIN INDEX*/
-    
-
-        /*MAIN TICKETS*/
-
-
-    .tickets__titulogeneral h2{
-        font-size: 25px;
-    }
-
-    .tickets__titulovip h2{
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .tickets__ticketlista ul{
-        column-gap: 20%;
-    }
-
-    .tickets__ticketlista ul li{
-        font-size: 100%;
-        width: 100%;
-        margin-left: 5%;
-}
-
-    .tickets__ticketlista ul input{
-        font-size: 100%;
-        width: 100%;
-    
-}
-
-
-        /*MAIN TICKETS*/
-
-}
-
-
-
-
-@media (min-width: 925px) and (max-width: 1200px){
-    *{
-        font-size: 18px;
-        font-weight: 600;
-    }
-     
-     
-        /*HEADER TODAS LAS PAGINAS*/
-     
-
-
-    .header__nav{
-        position: relative;
-    }
-    
-    .header__redireccion{
-        display: flex;
-        justify-content: left;
-        width: auto;
-    }
-    
-    .header__redireccion li{
-        padding: 20px;
-        
-    }
-     
-    .header__logo h1{
-        font-size: 90%;
-        margin-left: 5%;
-    }
-     
-    .header__redes{
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        max-width: 100%;
-        height: auto;
-    }
-     
-    .header__menu-barra{
-        display: none;
-    }
-     
-     
-        /*HEADER TODAS LAS PAGINAS*/
-     
-     
-
-
-        /*MAIN INDEX*/
-    .index__contenido a{
-        display: flex;
-        justify-content: center;
-        font-size: 90%;
-    }
-        
-
-    .index__info {
-        position: relative;
-    }
-         
-        /*MAIN INDEX*/        
-
-
-        /*MAIN TICKETS*/
-    
-
-        /*MAIN TICKETS*/
-}
-
-@media (min-width: 1201px){
-    *{
-        font-size: 20px;
-    }
-
-        /*MAIN INDEX*/   
-        .index__contenido a{
-            display: flex;
-            justify-content: center;
-            font-size: 80%;
-        }
-        
-
-        /*MAIN INDEX*/       
-}
+/*# sourceMappingURL=styles.css.map */
