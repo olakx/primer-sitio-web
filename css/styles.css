@@ -186,7 +186,7 @@ header {
   color: rgb(255, 166, 0);
   font-weight: 600;
   border: none;
-  animation: zoomIn;
+  animation: fadeIn;
   animation-duration: 3s;
 }
 
@@ -196,7 +196,7 @@ header {
   color: rgb(255, 166, 0);
   font-weight: 600;
   border: none;
-  animation: zoomIn;
+  animation: fadeIn;
   animation-duration: 3s;
 }
 
@@ -238,6 +238,8 @@ header {
   transition-duration: 1s;
   width: 160px;
   justify-content: center;
+  animation: slideInRight;
+  animation-duration: 3s;
   border-color: #fd2274;
 }
 
