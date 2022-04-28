@@ -3,6 +3,14 @@ $color-fondo: #202bbe;
 $color-fuentes: rgb(151, 148, 148);
 $tipografia-base: "AktivGrotesk-Regular",sans-serif;
 
+//Condicionales//
+@mixin texto ($color){
+    background-color: gray;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
 
 //Anidacion o nesting
 
@@ -224,55 +232,49 @@ header{
 
 .tickets__ticketlista ul{
     display: grid;
-    grid-template-areas: " li input"
-                         " li input"
-                         " li input"
-                         " li input";
+    grid-template-areas:    " li input"
+                            " li input"
+                            " li input"
+                            " li input";
     justify-content: center;
     column-gap: 266px;
-}
-
-.tickets__ticketlista ul li{
-    display: flex;
-    grid-column: 1/2;
-    font-size: 20px;
-    border: solid 1px black;
-    width: 255px;
-    background-color: rgba(0, 0, 0, 0.836);
-    justify-content: center;
-    color: #bbb;
-    margin-top: 2px;  
-    border-radius: 2px;
-    animation: slideInLeft;
-    animation-duration: 3s;
-    
-    
-}
-
-.tickets__ticketlista ul input{
-    grid-column: 2/3;
-    font-family: sans-serif;
-    display: flex;
-    font-size: 16px;
-    font-weight: 600;
-    background: black;
-    border: solid 2px black;
-    color: #fd2274;
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition-property:background-color;
-    transition-duration: 1s;
-    width: 160px;
-    justify-content: center;
-    animation: slideInRight;
-    animation-duration: 3s;
-    border-color: #fd2274;
-}
-
-.tickets__ticketlista ul input:hover{
-    background-color: rgba(103, 10, 224, 0.952);
-
+    li{
+        display: flex;
+        grid-column: 1/2;
+        font-size: 20px;
+        border: solid 1px black;
+        width: 255px;
+        background-color: rgba(0, 0, 0, 0.836);
+        justify-content: center;
+        color: #bbb;
+        margin-top: 2px;  
+        border-radius: 2px;
+        animation: slideInLeft;
+        animation-duration: 3s;
+    }
+    input{
+        grid-column: 2/3;
+        font-family: sans-serif;
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        background: black;
+        border: solid 2px black;
+        color: #fd2274;
+        padding: 10px 20px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition-property:background-color;
+        transition-duration: 1s;
+        width: 160px;
+        justify-content: center;
+        animation: slideInRight;
+        animation-duration: 3s;
+        border-color: #fd2274;
+        &:hover{
+            background-color: rgba(103, 10, 224, 0.952);
+        }
+    }
 }
 
 .tickets__seccion-vip ul{
@@ -358,8 +360,8 @@ header{
 
 @media screen and (max-width: 540px){
 *{
-   font-size: 15px;
-   font-weight: 600;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 
@@ -410,7 +412,7 @@ header{
 .index__info {
     position: relative;
 }
-    
+
         /*MAIN INDEX*/
 
 
@@ -429,197 +431,175 @@ header{
     font-size: 95%;
     display: flex;
     flex-direction: column;
-    
+    li{
+        width: 80%;
+        align-self: center;
+    }
+    input{
+        margin-bottom: 5%;
+        width: 80%;
+        align-self: center;
+    }
 }
 
-.tickets__ticketlista ul li{
-    width: 80%;
-    align-self: center;
 }
-
-.tickets__ticketlista ul input{
-    margin-bottom: 5%;
-    width: 80%;
-    align-self: center;
-}
-
         /*MAIN TICKETS*/
-}
-
 
 
 @media (min-width: 541px) and (max-width: 924px){
-    *{
-        font-size: 20px;
-        font-weight: 600;
-    }
-     
-     
+*{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
         /*HEADER TODAS LAS PAGINAS*/
-     
-     
-    .header__nav{
-        position: relative;
-    }
-     
-    .header__redireccion {
-        display: none;
-    }
-     
-    .header__logo h1{
-        font-size: 90%;
-        margin-left: 5%;
-    }
-     
-    .header__redes{
-        display: none;
-    }
-     
-    .header__menu-barra{
-        display: block;
-        text-align: center;
-        font-size: 50px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-right: 10%;
-    }
-     
-     
+
+
+.header__nav{
+    position: relative;
+}
+.header__redireccion {
+    display: none;
+}
+.header__logo h1{
+    font-size: 90%;
+    margin-left: 5%;
+}
+.header__redes{
+    display: none;
+}
+.header__menu-barra{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10%;
+}
         /*HEADER TODAS LAS PAGINAS*/
-     
 
 
 
-     
         /*MAIN INDEX*/
-     
 
-    .index__info {
-        position: relative;
-    }
-         
+.index__info {
+    position: relative;
+} 
         /*MAIN INDEX*/
-    
+
 
         /*MAIN TICKETS*/
 
 
-    .tickets__titulogeneral h2{
-        font-size: 25px;
-    }
+.tickets__titulogeneral h2{
+    font-size: 25px;
+}
 
-    .tickets__titulovip h2{
-        font-size: 25px;
-        font-weight: 600;
-    }
+.tickets__titulovip h2{
+    font-size: 25px;
+    font-weight: 600;
+}
 
-    .tickets__ticketlista ul{
-        column-gap: 20%;
-    }
-
-    .tickets__ticketlista ul li{
+.tickets__ticketlista ul{
+    column-gap: 20%;
+    li{
         font-size: 100%;
         width: 100%;
         margin-left: 5%;
-}
-
-    .tickets__ticketlista ul input{
+    }
+    input{
         font-size: 100%;
         width: 100%;
-    
+    }
 }
 
-
+}
         /*MAIN TICKETS*/
 
-}
 
 
 
 
 @media (min-width: 925px) and (max-width: 1200px){
-    *{
-        font-size: 18px;
-        font-weight: 600;
-    }
-     
-     
+*{
+    font-size: 18px;
+    font-weight: 600;
+}
+
         /*HEADER TODAS LAS PAGINAS*/
-     
 
 
-    .header__nav{
-        position: relative;
-    }
-    
-    .header__redireccion{
-        display: flex;
-        justify-content: left;
-        width: auto;
-    }
-    
-    .header__redireccion li{
-        padding: 20px;
-        
-    }
-     
-    .header__logo h1{
-        font-size: 90%;
-        margin-left: 5%;
-    }
-     
-    .header__redes{
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        max-width: 100%;
-        height: auto;
-    }
-     
-    .header__menu-barra{
-        display: none;
-    }
-     
-     
+
+.header__nav{
+    position: relative;
+}
+
+.header__redireccion{
+    display: flex;
+    justify-content: left;
+    width: auto;
+}
+
+.header__redireccion li{
+    padding: 20px;
+}
+.header__logo h1{
+font-size: 90%;
+    margin-left: 5%;
+}
+
+.header__redes{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.header__menu-barra{
+    display: none;
+}
+
+
         /*HEADER TODAS LAS PAGINAS*/
-     
-     
+
+
 
 
         /*MAIN INDEX*/
-    .index__contenido a{
-        display: flex;
-        justify-content: center;
-        font-size: 90%;
-    }
-        
+.index__contenido a{
+    display: flex;
+    justify-content: center;
+    font-size: 90%;
+}
 
-    .index__info {
-        position: relative;
-    }
-         
+
+.index__info {
+    position: relative;
+}
+
+}
         /*MAIN INDEX*/        
 
 
         /*MAIN TICKETS*/
-    
+
 
         /*MAIN TICKETS*/
-}
 
 @media (min-width: 1201px){
-    *{
-        font-size: 20px;
-    }
+*{
+    font-size: 20px;
+}
 
         /*MAIN INDEX*/   
-        .index__contenido a{
-            display: flex;
-            justify-content: center;
-            font-size: 80%;
-        }
-        
+.index__contenido a{
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+    }
 
-        /*MAIN INDEX*/       
 }
+        //*MAIN INDEX*//

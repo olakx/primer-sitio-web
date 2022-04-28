@@ -206,7 +206,6 @@ header {
   justify-content: center;
   column-gap: 266px;
 }
-
 .tickets__ticketlista ul li {
   display: flex;
   grid-column: 1/2;
@@ -221,7 +220,6 @@ header {
   animation: slideInLeft;
   animation-duration: 3s;
 }
-
 .tickets__ticketlista ul input {
   grid-column: 2/3;
   font-family: sans-serif;
@@ -242,7 +240,6 @@ header {
   animation-duration: 3s;
   border-color: #fd2274;
 }
-
 .tickets__ticketlista ul input:hover {
   background-color: rgba(103, 10, 224, 0.952);
 }
@@ -366,20 +363,17 @@ header {
     display: flex;
     flex-direction: column;
   }
-
   .tickets__ticketlista ul li {
     width: 80%;
     align-self: center;
   }
-
   .tickets__ticketlista ul input {
     margin-bottom: 5%;
     width: 80%;
     align-self: center;
   }
-
-  /*MAIN TICKETS*/
 }
+/*MAIN TICKETS*/
 @media (min-width: 541px) and (max-width: 924px) {
   * {
     font-size: 20px;
@@ -434,20 +428,17 @@ header {
   .tickets__ticketlista ul {
     column-gap: 20%;
   }
-
   .tickets__ticketlista ul li {
     font-size: 100%;
     width: 100%;
     margin-left: 5%;
   }
-
   .tickets__ticketlista ul input {
     font-size: 100%;
     width: 100%;
   }
-
-  /*MAIN TICKETS*/
 }
+/*MAIN TICKETS*/
 @media (min-width: 925px) and (max-width: 1200px) {
   * {
     font-size: 18px;
@@ -497,11 +488,10 @@ header {
   .index__info {
     position: relative;
   }
-
-  /*MAIN INDEX*/
-  /*MAIN TICKETS*/
-  /*MAIN TICKETS*/
 }
+/*MAIN INDEX*/
+/*MAIN TICKETS*/
+/*MAIN TICKETS*/
 @media (min-width: 1201px) {
   * {
     font-size: 20px;
@@ -513,8 +503,6 @@ header {
     justify-content: center;
     font-size: 80%;
   }
-
-  /*MAIN INDEX*/
 }
 
 /*# sourceMappingURL=styles.css.map */
