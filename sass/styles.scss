@@ -1,15 +1,26 @@
 //Variables
 $color-fondo: #202bbe;
+$color-primario: rgb(26, 11, 107);
+$color-secundario: rgb(12, 204, 70);
+$color-error: #d32752;
 $color-fuentes: rgb(151, 148, 148);
 $tipografia-base: "AktivGrotesk-Regular",sans-serif;
 
 //Condicionales//
-@mixin texto ($color){
-    background-color: gray;
-    font-size: 15px;
+@mixin texto ($color,$tamaño){
+    background-color: $color;
+    font-size: $tamaño;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
+
+$colors: (
+    "fondo": $color-fondo,
+    "primario": $color-primario,
+    "secundario": $color-secundario,
+    "error": $color-error,
+    "fuentes": $color-fuentes,
+);
 
 
 //Anidacion o nesting
@@ -42,7 +53,6 @@ html{
 header{
     background-color: #1c1c1d;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
 }
 
 .header__logo{
@@ -172,6 +182,18 @@ header{
 .index__vendidos{
     text-align: center;
     margin-top: 100px;
+    h4{
+        font-size: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        background-color: map-get($colors, secundario);
+    }
+    p{
+        font-size: 100%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 600;
+        color: map-get($colors, error);
+    }
     a{
         cursor: pointer;
         transition-property: all;
@@ -189,18 +211,26 @@ header{
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
     margin-top: 50px;
     justify-items: center;
+    p{
+        @include texto($color-fuentes,2rem)
+    }
+    h6{
+        @include texto(yellow,1rem)
+    }
+    h5{
+        @include texto(purple,1rem)
+    }
 }
 
 .index__tituloinfo{
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
+    background-color: map-get($colors, error);
 }
 
 .index__info{
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
+    @extend .index__tituloinfo;
 }
 
 
