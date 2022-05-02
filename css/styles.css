@@ -277,6 +277,31 @@ header {
 /*Main Pagina TIENDA*/
 /*Main Pagina TIENDA*/
 /*Main Pagina LINEUP*/
+.lineup__arribaimg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.lineup__arribaimg h1 {
+  position: absolute;
+  z-index: 2;
+  align-self: center;
+  color: white;
+  font-weight: 600;
+}
+.lineup__arribaimg picture {
+  top: 0%;
+  left: 0%;
+  margin-bottom: 40%;
+}
+.lineup__arribaimg img {
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  height: auto;
+  width: 100%;
+}
+
 .lineup__img {
   display: flex;
   justify-content: center;
@@ -396,8 +421,15 @@ header {
     width: 80%;
     align-self: center;
   }
+
+  /*MAIN TICKETS*/
+  /*MAIN LINEUP*/
+  .lineup__arribaimg h1 {
+    font-size: 100%;
+  }
+
+  /*MAIN LINEUP*/
 }
-/*MAIN TICKETS*/
 @media (min-width: 541px) and (max-width: 924px) {
   * {
     font-size: 20px;
@@ -461,8 +493,14 @@ header {
     font-size: 100%;
     width: 100%;
   }
+
+  /*MAIN LINEUP*/
+  .lineup__arribaimg h1 {
+    font-size: 100%;
+  }
+
+  /*MAIN LINEUP*/
 }
-/*MAIN TICKETS*/
 @media (min-width: 925px) and (max-width: 1200px) {
   * {
     font-size: 18px;
