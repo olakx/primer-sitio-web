@@ -277,24 +277,36 @@ header {
 /*Main Pagina TIENDA*/
 /*Main Pagina TIENDA*/
 /*Main Pagina LINEUP*/
-.lineup__arribaimg {
+.lineup__imgs {
+  min-height: 50vh;
   position: relative;
+}
+.lineup__imgs .lineup__arribaimg {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.lineup__arribaimg h1 {
-  position: absolute;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  position: relative;
   z-index: 2;
-  align-self: center;
-  color: white;
-  font-weight: 600;
 }
-.lineup__arribaimg picture {
+.lineup__imgs .lineup__arribaimg h1 {
+  margin-top: 14%;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.lineup__imgs picture {
   top: 0%;
   left: 0%;
-  margin-bottom: 40%;
+  position: absolute;
+  height: 88%;
+  width: 100%;
 }
-.lineup__arribaimg img {
+.lineup__imgs img {
   top: 0%;
   left: 0%;
   position: absolute;
@@ -305,10 +317,22 @@ header {
 .lineup__img {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 /*Main Pagina LINEUP*/
+/*Main Pagina Sobre Nosotros*/
+.nosotros__titulo {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.nosotros__ediciones {
+  text-align: center;
+}
+
+/*Main Pagina Sobre Nosotros*/
 /*Footer todas las paginas*/
 .footer {
   background-color: #1c1c1d;
@@ -518,10 +542,6 @@ header {
     width: auto;
   }
 
-  .header__redireccion li {
-    padding: 20px;
-  }
-
   .header__logo h1 {
     font-size: 90%;
     margin-left: 5%;
@@ -557,6 +577,7 @@ header {
 @media (min-width: 1201px) {
   * {
     font-size: 20px;
+    font-weight: 600;
   }
 
   /*MAIN INDEX*/
