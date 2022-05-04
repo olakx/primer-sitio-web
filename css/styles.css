@@ -333,13 +333,23 @@ header {
 }
 
 /*Main Pagina Sobre Nosotros*/
+.tienda h5, .tienda h4 {
+  color: white;
+  border: 2px solid white;
+}
+.tienda .card {
+  border: 1px solid black;
+}
+.tienda .card-body {
+  background-color: #000000;
+}
+
 /*Footer todas las paginas*/
 .footer {
   background-color: #1c1c1d;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
   color: #ccc;
-  margin-top: 100px;
 }
 
 .footer__nombreform {
