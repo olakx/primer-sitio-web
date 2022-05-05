@@ -24,7 +24,7 @@ $colors: (
 
 
 //Anidacion o nesting
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:ital,wght@1,500&family=Open+Sans&display=swap');
 
 body {
     font-family: $tipografia-base;
@@ -47,63 +47,60 @@ html{
     background-color: #E0EEF9;
 }
 
+main{
+    margin-bottom: 20%;
+}
 /*Header Todas las paginas*/
-
-
-header{
-    background-color: #1c1c1d;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header__logo{
+.header{
+    background-color: #24252A;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    h1{
-        color: #ccc;
-        font-size: 20px;
+    padding: 10px 5%;
+    ul{
+        margin: 0%;
     }
-}
-
-.header__menu-barra{
-    display: none;
-    color: black;
-    align-self: center;
-}
-
-.header__nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__redireccion ul{
-    display: flex;
-    width: 100%;
-    height: auto;
-    list-style: none;
-}
-
-.header__listas {
-    li{
-        padding: 0px 20px;
-        font-size:  15px;
-        padding-top: 0.15rem;
-    }
-    a{
-        color: #ccc;
-        cursor: pointer;
-        transition-property: all;
-        transition-duration: 0s;
+    li,a,button{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #edf0f1;
         text-decoration: none;
-        &:hover{
-            color: #fff;
+    }
+    .logo{
+        cursor: pointer;
+        width: auto;    
+        margin-right: auto;
+    }
+    .nav__links{
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 0px 20px;
+            a{
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    color:#0088a9
+                }
+            }
+            
         }
     }
-}
+    button{
+        margin-left: 20px;
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer	;
+        transition:all 0.3s ease 0s ;
+        &:hover{
+            background-color: rgba(0,136,169,0.8);
+        }
+    }
 
-.header__redes a{
-    text-decoration: none;
-}
 
+}
 
 /*Header todas las paginas*/
 
