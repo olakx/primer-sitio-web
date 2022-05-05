@@ -51,8 +51,8 @@ main{
     margin-bottom: 20%;
 }
 /*Header Todas las paginas*/
-.header{
-    background-color: #0a0a0a;
+header{
+    background-color: #222222;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -99,8 +99,26 @@ main{
         }
     }
 
-
+    //Mobile Header//
+    .dropdown{
+        #dropdownMenu3{
+            background-color: #181818;
+        }
+        .dropdown-menu {
+            background-color: #181818;
+            button{
+                color: white;
+                border-color:rgba(0,136,169,0.8);
+                width: 100%;
+                &:hover{
+                    color: rgba(0,136,169,0.8);
+                }
+            }
+        }
+    }   
+    //Mobile Header//
 }
+
 
 /*Header todas las paginas*/
 
@@ -542,8 +560,17 @@ footer{
 
 .nav__links{
     display: none;
+}   
+
+header .cta{
+    display: none;
 }
 
+.dropdown{
+    button{
+        margin-right: 20px  ;
+    }
+}
 
 .index__contenido a{
     display: flex;
@@ -653,11 +680,7 @@ footer{
         padding: 2em;
     }
 }
-
 }
-
-
-
 
 
 @media (min-width: 921px) and (max-width: 1200px){
@@ -665,7 +688,9 @@ footer{
     font-size: 18px;
     font-weight: 400;
 }
-
+.dropdown{
+    display: none;
+}
 .index__contenido a{
     display: flex;
     justify-content: center;
@@ -685,6 +710,9 @@ footer{
     font-weight: 400;
 }
 
+.dropdown{
+    display: none;
+}
 
 .index__contenido a{
         display: flex;

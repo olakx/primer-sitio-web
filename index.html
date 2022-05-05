@@ -24,9 +24,25 @@
 <body>
 <header class="header">
         <img class="logo" src="resources/logos/fest__logo.png" alt="logo">
+
+        <!--Heeader-->
         <nav>
+            <!--Menu hamburguesa-->
+            <div class="dropdown">
+                <button class="btn btn-secondary " type="button" id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a href="index.html">Inicio</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="pages/tickets.html">Tickets</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="pages/tienda.html">Tienda</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="pages/lineup.html">Lineup</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="pages/sobre-nosotros.html">Sobre nosotros</a></button></li>
+                </ul>
+            </div>
+            <!--Menu hamburguesa-->
             <ul class="nav__links">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="index.html">Inicio</a></li>
                 <li><a href="pages/tickets.html">Tickets</a></li>
                 <li><a href="pages/tienda.html">Tienda</a></li>
                 <li><a href="pages/lineup.html">Lineup</a></li>
@@ -34,6 +50,7 @@
             </ul>
         </nav>
         <a class="cta" href="#"><button>Contacto</button></a>
+        <!--Heeader-->
 </header>
 
 
