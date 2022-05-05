@@ -52,7 +52,7 @@ main{
 }
 /*Header Todas las paginas*/
 .header{
-    background-color: #24252A;
+    background-color: #0a0a0a;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -76,7 +76,7 @@ main{
         list-style: none;
         li{
             display: inline-block;
-            padding: 0px 20px;
+            padding: 0px 15px;
             a{
                 transition: all 0.3s ease 0s;
                 &:hover{
@@ -182,13 +182,13 @@ main{
     h4{
         font-size: 100%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         background-color: map-get($colors, secundario);
     }
     p{
         font-size: 100%;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         color: map-get($colors, error);
     }
     a{
@@ -241,7 +241,7 @@ main{
     text-align: center;
     font-size: 35px;
     color: rgb(255, 166, 0);
-    font-weight: 600;
+    font-weight: 400;
     border: none;
     animation: fadeIn;
     animation-duration: 3s;
@@ -251,7 +251,7 @@ main{
     text-align: center;
     font-size: 15px;
     color: rgb(255, 166, 0);
-    font-weight: 600;
+    font-weight: 400;
     border: none;
     animation: fadeIn;
     animation-duration: 3s;
@@ -284,7 +284,7 @@ main{
         font-family: sans-serif;
         display: flex;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         background: black;
         border: solid 2px black;
         color: #fd2274;
@@ -338,7 +338,7 @@ main{
             font-size: 3rem;
             text-align: center;
             color: #ffffff;
-            font-weight: 600;
+            font-weight: 400;
             opacity: 0.9;
         }
     }
@@ -426,46 +426,102 @@ main{
 
 /*Footer todas las paginas*/
 
-
-
-.footer{
-    background-color: #1c1c1d;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    color: #ccc;
+footer{
+    background: #181818;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 1.5em;
+}
+.content{
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
 }
 
-.footer__nombreform{
-    text-align:center;
-
-}
-
-
-.footer__emailform{
+.footer__logo{
     text-align: center;
+    font-size: 3em;
+    padding-top: 1em;
 }
 
-.footer__textform{
-    text-align: center;
+.contact__wrapper{
+    box-shadow: 0 0 20px 0 rgba(255, 255 ,255, 0.3);
+    > * {
+        padding: 1em;
+    }
 }
 
-.footer__boton{
-    text-align: center;
+.contact__form{
+    background: #222222;
+    h1{
+        font-size: 80%;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .block{
+            grid-column: 1 / 3 ;
+        }
+    }
+    p{
+        margin: 0;
+        padding: 1em;
+        font-size: 80%;
+    }
+    button,input,textarea{
+        font-size: 80%;
+        width: 100%;
+        padding: 0.7em;
+        border: none;
+        background: none;
+        outline: none;
+        color: #000;
+        border-bottom:1px solid rgb(0, 136, 169);
+    }
+    button{
+        background: rgb(0, 136, 169);
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+        &:hover,:focus{
+            background-color: rgb(0, 136, 169);
+            color: #fff;
+            transition: background-color 1s ease-out;
+            outline: 0;
+        }
+    }
 }
 
-.footer__redes{
-    text-align: center;
+.contact__info{
+    background: #000;
+    h4,ul,p{
+        text-align: left;
+        margin: 0 0 1rem 0;
+        font-size: 80%;
+    }
+    h4{
+        font-size: 100%;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            padding: 0.2em;
+            display: inline-block;
+        }
+    }
+
+.footer__media{
+    i{
+        padding:5px;
+        font-size: 25px;
+        color: rgb(0, 136, 169);
+    }
 }
 
-.footer h6{
-    text-align: center;
-    margin: 0%;
 }
 
-.footer__redes{
-    display: flex;
-    justify-content: center;
-}
 
 
 /*Footer todas las paginas*/
@@ -481,46 +537,13 @@ main{
 @media screen and (max-width: 540px){
 *{
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-.header__nav{
-    position: relative;
-}
-
-.header__redireccion {
+.nav__links{
     display: none;
 }
 
-.header__logo h1{
-    font-size: 90%;
-    margin-left: 5%;
-}
-
-.header__redes{
-    display: none;
-}
-
-.header__menu-barra{
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-right: 10%;
-}
-
-
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-
-        /*MAIN INDEX*/
 
 .index__contenido a{
     display: flex;
@@ -533,10 +556,9 @@ main{
     position: relative;
 }
 
-        /*MAIN INDEX*/
 
 
-        /*MAIN TICKETS*/
+
 
 .tickets__titulogeneral h2{
     font-size: 25px;
@@ -561,65 +583,31 @@ main{
         align-self: center;
     }
 }
-        /*MAIN TICKETS*/
 
-        /*MAIN LINEUP*/
-        .lineup__arribaimg{
-            h1{
-                font-size: 100%;
-            }
-        }
-        /*MAIN LINEUP*/
+
+
+.lineup__arribaimg{
+    h1{
+        font-size: 100%;
+    }
+}
+
+.footer__logo{
+    font-size: 200%;
+}
+
 
 }
 
 
-@media (min-width: 541px) and (max-width: 924px){
+@media (min-width: 541px) and (max-width: 920px){
 *{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
-
-
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-.header__nav{
-    position: relative;
-}
-.header__redireccion {
+.nav__links{
     display: none;
 }
-.header__logo h1{
-    font-size: 90%;
-    margin-left: 5%;
-}
-.header__redes{
-    display: none;
-}
-.header__menu-barra{
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-right: 10%;
-}
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-
-        /*MAIN INDEX*/
-
-.index__info {
-    position: relative;
-} 
-        /*MAIN INDEX*/
-
-
-        /*MAIN TICKETS*/
-
 
 .tickets__titulogeneral h2{
     font-size: 25px;
@@ -627,7 +615,7 @@ main{
 
 .tickets__titulovip h2{
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .tickets__ticketlista ul{
@@ -642,91 +630,62 @@ main{
         width: 100%;
     }
 }
-        //MAIN TICEKTS//
 
-        /*MAIN LINEUP*/
         .lineup__arribaimg{
             h1{
                 font-size: 100%;
             }
         }
-        /*MAIN LINEUP*/
 
 } 
 
 
 
-@media (min-width: 925px) and (max-width: 1200px){
+
+@media (min-width:750px){
+.footer{
+    padding: 0 4rem;
+}
+.contact__wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    > * {
+        padding: 2em;
+    }
+}
+
+}
+
+
+
+
+
+@media (min-width: 921px) and (max-width: 1200px){
 *{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-
-.header__nav{
-    position: relative;
-}
-
-.header__redireccion{
-    display: flex;
-    justify-content: left;
-    width: auto;
-}
-
-.header__logo h1{
-    font-size: 90%;
-    margin-left: 5%;
-}
-
-.header__redes{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-}
-
-.header__menu-barra{
-    display: none;
-}
-
-
-        /*HEADER TODAS LAS PAGINAS*/
-
-
-
-
-        /*MAIN INDEX*/
 .index__contenido a{
     display: flex;
     justify-content: center;
     font-size: 90%;
 }
 
-
-.index__info {
-    position: relative;
 }
 
-}
-        /*MAIN INDEX*/        
 
 
-        /*MAIN TICKETS*/
 
 
-        /*MAIN TICKETS*/
 
 @media (min-width: 1201px){
 *{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-        /*MAIN INDEX*/   
+
 .index__contenido a{
         display: flex;
         justify-content: center;
@@ -734,4 +693,3 @@ main{
     }
 
 }
-        //*MAIN INDEX*//
