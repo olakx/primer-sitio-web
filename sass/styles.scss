@@ -29,6 +29,7 @@ $colors: (
 body {
     font-family: $tipografia-base;
     font-size: 100%;
+    background-color: #202124;
 }
 *{
     margin: 0;
@@ -47,9 +48,6 @@ html{
     background-color: #E0EEF9;
 }
 
-main{
-    margin-bottom: 20%;
-}
 /*Header Todas las paginas*/
 header{
     background-color: #222222;
@@ -124,7 +122,6 @@ header{
 
 
 /*MAIN INDEX */
-
 
 .index__contenido{
     padding-top: 350px;
@@ -224,7 +221,7 @@ header{
 .index__pases{
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    margin-top: 50px;
+    margin-top: 5em;
     justify-items: center;
     p{
         @include texto($color-fuentes,2rem)
@@ -254,11 +251,10 @@ header{
 
 /*Main Pagina Tickets*/
 
-
 .tickets__titulogeneral h2{
     text-align: center;
     font-size: 35px;
-    color: rgb(255, 166, 0);
+    color: rgb(6, 173, 214);
     font-weight: 400;
     border: none;
     animation: fadeIn;
@@ -268,7 +264,7 @@ header{
 .tickets__titulovip{
     text-align: center;
     font-size: 15px;
-    color: rgb(255, 166, 0);
+    color: rgb(6, 173, 214);
     font-weight: 400;
     border: none;
     animation: fadeIn;
@@ -288,10 +284,11 @@ header{
         grid-column: 1/2;
         font-size: 20px;
         border: solid 1px black;
+        padding-top: 0.5em;
         width: 255px;
-        background-color: rgba(0, 0, 0, 0.836);
+        background-color: rgba(255, 255, 255, 0.836);
         justify-content: center;
-        color: #bbb;
+        color: rgb(0, 0, 0);
         margin-top: 2px;  
         border-radius: 2px;
         animation: slideInLeft;
@@ -329,15 +326,6 @@ header{
 
 /*Main Pagina Tickets*/
 
-
-
-
-/*Main Pagina TIENDA*/
-
-
-
-/*Main Pagina TIENDA*/
-
 /*Main Pagina LINEUP*/
 .lineup__imgs{
     min-height: 50vh;
@@ -352,12 +340,12 @@ header{
         position: relative;
         z-index: 2;
         h1{
-            margin-top: 14%;
+            margin-top: 20%;
             font-size: 3rem;
             text-align: center;
             color: #ffffff;
-            font-weight: 400;
-            opacity: 0.9;
+            font-weight: 600;
+            opacity: 1;
         }
     }
     picture{
@@ -379,20 +367,52 @@ header{
 .lineup__img{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20%;
+    img{
+        margin-left: 25%;
+    }
+    .lineup__title{
+        h2{
+            text-align: center;
+            color: rgb(6, 173, 214);
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            border:1px solid black;
+            background-color: black;
+        }
+    }
+    
 }
 
 /*Main Pagina LINEUP*/
 
 /*Main Pagina Sobre Nosotros*/
+
 .nosotros__titulo{
     text-align: center;
-    margin-top: 5%;
     margin-bottom: 2%;
-    
+    color:rgb(2, 177, 221);
+    padding-top: 2em;
+}
+.nosotros__info{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    border:1px solid rgb(2, 177, 221);
+    border-radius: 5em;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 2em;
 }
 .nosotros__ediciones{
+    padding-top: 1em;
+    padding-bottom: 0,5em;
+    font-size: 3em;
     text-align: center;
+    color: rgb(2, 177, 221);
 }
 
 /*Main Pagina Sobre Nosotros*/
@@ -432,7 +452,7 @@ header{
     }
 
     .card{
-        border: 1px solid black;
+        border: 0px solid black;
     }
     .card-body{ 
     background-color: #000000;
@@ -613,10 +633,8 @@ header .cta{
 
 
 
-.lineup__arribaimg{
-    h1{
-        font-size: 100%;
-    }
+.lineup__imgs .lineup__arribaimg h1{
+        font-size: 200%;     
 }
 
 .footer__logo{
