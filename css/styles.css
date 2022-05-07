@@ -288,59 +288,33 @@ header .dropdown .dropdown-menu button:hover {
 
 /*Main Pagina Tickets*/
 /*Main Pagina LINEUP*/
-.lineup__imgs {
-  min-height: 50vh;
-  position: relative;
+.lineup__header {
+  background: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), url(../resources/images/lineup_header_largo1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 80%;
 }
-.lineup__imgs .lineup__arribaimg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin: auto;
-  position: relative;
-  z-index: 2;
+.lineup__header div {
+  padding-top: 14.5%;
+  padding-bottom: 25%;
 }
-.lineup__imgs .lineup__arribaimg h1 {
-  margin-top: 20%;
-  font-size: 3rem;
+.lineup__header div h2 {
   text-align: center;
-  color: #ffffff;
-  font-weight: 600;
-  opacity: 1;
-}
-.lineup__imgs picture {
-  top: 0%;
-  left: 0%;
-  position: absolute;
-  height: 88%;
-  width: 100%;
-}
-.lineup__imgs img {
-  top: 0%;
-  left: 0%;
-  position: absolute;
-  height: auto;
-  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 
-.lineup__img {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 20%;
-}
-.lineup__img img {
-  margin-left: 25%;
-}
-.lineup__img .lineup__title h2 {
+.lineup__text .lineup__dias {
+  padding-top: 5%;
   text-align: center;
-  color: rgb(6, 173, 214);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border: 1px solid black;
-  background-color: black;
+}
+.lineup__text .lineup__dias img {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: auto;
 }
 
 /*Main Pagina LINEUP*/
