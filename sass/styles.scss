@@ -1,26 +1,5 @@
 //Variables
-$color-fondo: #202bbe;
-$color-primario: rgb(26, 11, 107);
-$color-secundario: rgb(12, 204, 70);
-$color-error: #d32752;
-$color-fuentes: rgb(151, 148, 148);
 $tipografia-base: "AktivGrotesk-Regular",sans-serif;
-
-//Condicionales//
-@mixin texto ($color,$tamaño){
-    background-color: $color;
-    font-size: $tamaño;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-$colors: (
-    "fondo": $color-fondo,
-    "primario": $color-primario,
-    "secundario": $color-secundario,
-    "error": $color-error,
-    "fuentes": $color-fuentes,
-);
 
 
 //Anidacion o nesting
@@ -122,7 +101,6 @@ header{
 
 
 /*MAIN INDEX */
-
 .index__contenido{
     padding-top: 350px;
     display: flex;
@@ -154,9 +132,9 @@ header{
         border-radius: 30px;
         padding: 10px 0;
         width: 200px;
-        background-color: #f5be09;
+        background-color: rgb(0, 204, 255);
         font-size: 0.8rem;
-        color: #0f0f0f;
+        color: #000000;
         font-weight: 800;
         transition: 150ms;
         margin-top: 40px;
@@ -194,56 +172,117 @@ header{
 .index__vendidos{
     text-align: center;
     margin-top: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     h4{
-        font-size: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 400;
-        background-color: map-get($colors, secundario);
+        font-size: 200%;
+        padding-bottom: 0.3em;
+        font-weight: 600;
+        color: rgb(0, 125, 197);
     }
     p{
         font-size: 100%;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 400;
-        color: map-get($colors, error);
+        color: white;
+        background-color: black;
+        border:1px solid rgb(2, 177, 221);
+        border-radius: 3em;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        line-height: 2em;
     }
     a{
         cursor: pointer;
         transition-property: all;
         transition-duration: 0s;
         text-decoration: none;
-        color: #202bbe;
+        color: white;
+        border: black;
+        background-color: #037896;
+        border-radius: 4em;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        line-height: 2em;
         &:hover{
-            color: #fd2274;
+            background-color: rgb(0, 204, 255);
+            color: rgb(255, 255, 255);
         }
     }
 }
 
 .index__pases{
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    color: white;
+    background-color: #000;
+    margin: 2em;
+    border: 8px inset rgb(0,204,255);
     margin-top: 5em;
-    justify-items: center;
+    margin-bottom: 5em;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;        
+    }
     p{
-        @include texto($color-fuentes,2rem)
+        color: rgb(0, 125, 197);
+        background-color: #000;
+        margin: 1em;
+        font-size: 1.4em;
     }
-    h6{
-        @include texto(yellow,1rem)
+    h4{
+        padding: 5px;
+        font-size: 1.2em;
     }
-    h5{
-        @include texto(purple,1rem)
+    a{
+        border:7px solid rgb(0, 125, 197);
+        border-radius: 2em;
+        padding: 10px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0s;
+        color: white;
+        border: black;
+        background-color: #037896;
+        &:hover{
+            background-color: rgb(0, 204, 255);
+            color: rgb(255, 255, 255);
+        }
     }
 }
 
-.index__tituloinfo{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 20px;
-    background-color: map-get($colors, error);
+.index__fondoinfo{
+    .index__tituloinfo h4{
+        text-align: center;
+        margin-top: 1em;
+        font-size: 2em;
+        color: rgb(0, 125, 197);
+        }
+    .index__info p{
+        margin: 2em;
+        font-weight: 400;
+        color: white;
+        background-color: black;
+        border:1px solid rgb(2, 177, 221);
+        border-radius: 3em;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        line-height: 2em;
+    }
+    
 }
 
-.index__info{
-    @extend .index__tituloinfo;
-}
+
+
 
 
 /*MAIN INDEX */
@@ -410,15 +449,15 @@ header{
         transition: all .5s ease;
         &:hover{
             letter-spacing: 3px;
-            background-color: hsl(261deg 80% 48%);
-            color: hsl(0, 0%, 100%);
-            box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+            background-color: rgb(0, 204, 255)(261deg 80% 48%);
+            color: rgb(0, 204, 255)(0, 0%, 100%);
+            box-shadow: rgb(0, 204, 255) 0px 7px 29px 0px;
             }
         &:active{
             letter-spacing: 3px;
-            background-color: hsl(261deg 80% 48%);
-            color: hsl(0, 0%, 100%);
-            box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+            background-color: rgb(0, 204, 255)(261deg 80% 48%);
+            color: rgb(0, 204, 255)(0, 0%, 100%);
+            box-shadow: rgb(0, 204, 255) 0px 0px 0px 0px;
             transform: translateY(10px);
             transition: 100ms;
             }
@@ -565,15 +604,32 @@ header .cta{
     }
 }
 
+
+
 .index__contenido a{
     display: flex;
     justify-content: center;
     font-size: 100%;
 }
 
+.index__vendidos{
+    h4{
+        font-size: 150%;
+    }
+    p{
+        padding: 1em;
+    }
+}
 
-.index__info {
-    position: relative;
+.index__pases{
+    display: flex;
+    flex-direction: column;
+}
+
+.index__fondoinfo{
+    .index__info p{
+        padding: 1em;
+    }
 }
 
 
@@ -609,6 +665,15 @@ header .cta{
 .lineup__imgs .lineup__arribaimg h1{
         font-size: 200%;     
 }
+
+
+
+.nosotros__info{
+    padding: 1em;
+}
+
+
+
 
 .footer__logo{
     font-size: 200%;
