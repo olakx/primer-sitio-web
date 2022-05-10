@@ -171,11 +171,11 @@ header{
 
 .index__vendidos{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 5%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     h4{
         font-size: 200%;
-        padding-bottom: 0.3em;
+        padding-bottom: 0.5em;
         font-weight: 600;
         color: rgb(0, 125, 197);
     }
@@ -219,7 +219,7 @@ header{
     color: white;
     background-color: #000;
     margin: 2em;
-    border: 8px inset rgb(0,204,255);
+    border: 8px inset rgb(0,125,197);
     margin-top: 5em;
     margin-bottom: 5em;
     div{
@@ -281,86 +281,129 @@ header{
     
 }
 
-
-
-
-
 /*MAIN INDEX */
 
 
+
+
 /*Main Pagina Tickets*/
-
-.tickets__titulogeneral h2{
+.tickets{
+    background: linear-gradient(rgba(5, 7, 12, 0.7),rgba(5, 7, 12, 0.7)), url(../resources/images/tickets_header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tickets__titulotickets{
+    color: white;
     text-align: center;
-    font-size: 35px;
-    color: rgb(6, 173, 214);
-    font-weight: 400;
-    border: none;
-    animation: fadeIn;
-    animation-duration: 3s;
+    margin-bottom: 5%;
+}
+.tickets__titulogeneral{
+    color: #0099ff;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 2%;
 }
 
-.tickets__titulovip{
-    text-align: center;
-    font-size: 15px;
-    color: rgb(6, 173, 214);
-    font-weight: 400;
-    border: none;
-    animation: fadeIn;
-    animation-duration: 3s;
-}
-
-.tickets__ticketlista ul{
-    display: grid;
-    grid-template-areas:    " li input"
-                            " li input"
-                            " li input"
-                            " li input";
-    justify-content: center;
-    column-gap: 266px;
-    li{
+.tickets__general{
+    display:grid;
+    grid-template-columns: 1fr;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    div{
         display: flex;
-        grid-column: 1/2;
-        font-size: 20px;
-        border: solid 1px black;
-        padding-top: 0.5em;
-        width: 255px;
-        background-color: rgba(255, 255, 255, 0.836);
-        justify-content: center;
-        color: rgb(0, 0, 0);
-        margin-top: 2px;  
-        border-radius: 2px;
-        animation: slideInLeft;
-        animation-duration: 3s;
+        flex-direction: row;
+        margin: 0,5em;
+        margin-left: 10em;
+        padding-bottom: 3%;
     }
-    input{
-        grid-column: 2/3;
-        font-family: sans-serif;
-        display: flex;
-        font-size: 16px;
-        font-weight: 400;
-        background: black;
-        border: solid 2px black;
-        color: #fd2274;
-        padding: 10px 20px;
-        margin-top: 15px;
-        cursor: pointer;
-        transition-property:background-color;
-        transition-duration: 1s;
-        width: 160px;
-        justify-content: center;
-        animation: slideInRight;
-        animation-duration: 3s;
-        border-color: #fd2274;
+    h4,p,button{
+        border: 1px solid white;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        height: 120%;
+        padding-top: 1%;
+    }
+    h4{
+        width: 14%;
+        background-color: black;
+    }
+    p{
+        width: 50%;
+        background-color: rgb(5, 5, 5);
+    }
+    button{
+        padding: 0%;
+        width: 13%;
+        background-color: black;
+        border: 2px inset rgb(0,125,197);
+        transition: all 1s;
         &:hover{
-            background-color: rgba(103, 10, 224, 0.952);
+            background-color: rgb(2, 177, 221);
+
         }
     }
 }
+.tickets__titulovip{
+    color: #0099ff;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
 
-.tickets__seccion-vip ul{
-    display: grid;
-    grid-template-areas: "li input";
+.tickets__vip{
+    display:grid;
+    grid-template-columns: 1fr;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    div{
+        display: flex;
+        flex-direction: row;
+        margin: 0,5em;
+        margin-left: 10em;
+        padding-bottom: 3%;
+    }
+    h4,p,button{
+        border: 1px solid white;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        height: 120%;
+        padding-top: 1%;
+    }
+    h4{
+        width: 14%;
+        background-color: black;
+    }
+    p{
+        width: 50%;
+        background-color: rgb(5, 5, 5);
+    }
+    button{
+        padding: 0%;
+        width: 13%;
+        background-color: black;
+        border: 2px inset rgb(0,125,197);
+        transition: all 1s;
+        &:hover{
+            background-color: rgb(2, 177, 221);
+        }
+    }
+}
+.tickets__garantia-fondo{
+    background: linear-gradient(rgba(5, 7, 12, 1),rgba(5, 7, 12, 1));
+    margin: 8%;
+    margin-bottom: 0;
+}
+.tickets__garantia{
+    color: #aaa;
+    text-align: center;
+    h5,p,a{
+        padding: 0.5%;
+        font-size: 60%;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 /*Main Pagina Tickets*/
@@ -636,31 +679,6 @@ header .cta{
 
 
 
-.tickets__titulogeneral h2{
-    font-size: 25px;
-}
-
-.tickets__titulovip h2{
-    font-size: 25px;
-}
-
-.tickets__ticketlista ul{
-    column-gap: 20%;
-    font-size: 95%;
-    display: flex;
-    flex-direction: column;
-    li{
-        width: 80%;
-        align-self: center;
-    }
-    input{
-        margin-bottom: 5%;
-        width: 80%;
-        align-self: center;
-    }
-}
-
-
 
 .lineup__imgs .lineup__arribaimg h1{
         font-size: 200%;     
@@ -671,9 +689,6 @@ header .cta{
 .nosotros__info{
     padding: 1em;
 }
-
-
-
 
 .footer__logo{
     font-size: 200%;
@@ -691,34 +706,6 @@ header .cta{
 .nav__links{
     display: none;
 }
-
-.tickets__titulogeneral h2{
-    font-size: 25px;
-}
-
-.tickets__titulovip h2{
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.tickets__ticketlista ul{
-    column-gap: 20%;
-    li{
-        font-size: 100%;
-        width: 100%;
-        margin-left: 5%;
-    }
-    input{
-        font-size: 100%;
-        width: 100%;
-    }
-}
-
-        .lineup__arribaimg{
-            h1{
-                font-size: 100%;
-            }
-        }
 
 } 
 
