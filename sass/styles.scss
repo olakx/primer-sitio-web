@@ -312,7 +312,7 @@ header{
         display: flex;
         flex-direction: row;
         margin: 0,5em;
-        margin-left: 10em;
+        margin-left: 17%;
         padding-bottom: 3%;
     }
     h4,p,button{
@@ -358,7 +358,7 @@ header{
         display: flex;
         flex-direction: row;
         margin: 0,5em;
-        margin-left: 10em;
+        margin-left: 17%;
         padding-bottom: 3%;
     }
     h4,p,button{
@@ -676,13 +676,36 @@ header .cta{
 }
 
 
+.tickets__general{
+    div{
+        display: flex;
+        flex-direction: column;
+        h4,p,button{
+            width: 80%;
+            text-align: center;
+            padding: 2%;
+        }
+    }
+}
 
+.tickets__vip{
+    div{
+        display: flex;
+        flex-direction: column;
+        h4,p,button{
+            width: 80%;
+            text-align: center;
+            padding: 2%;
+        }
+    }
+}
 
 
 
 .lineup__imgs .lineup__arribaimg h1{
         font-size: 200%;     
 }
+
 
 
 
@@ -703,9 +726,33 @@ header .cta{
     font-size: 20px;
     font-weight: 400;
 }
+
 .nav__links{
-    display: none;
+    display:none;
 }
+
+
+.tickets__general{
+    div{
+        margin-left: 5%;
+        margin-right: 5%;
+        h4,p,button{
+            width: 50%;
+            height: 80%;
+        }
+    }
+}
+.tickets__vip{
+    div{
+        margin-left: 5%;
+        margin-right: 5%;
+        h4,p,button{
+            width: 50%;
+            height: 80%;
+        }
+    }
+}
+
 
 } 
 

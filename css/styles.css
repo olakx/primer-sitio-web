@@ -294,7 +294,7 @@ header .dropdown .dropdown-menu button:hover {
   display: flex;
   flex-direction: row;
   margin: 0, 5em;
-  margin-left: 10em;
+  margin-left: 17%;
   padding-bottom: 3%;
 }
 .tickets__general h4, .tickets__general p, .tickets__general button {
@@ -340,7 +340,7 @@ header .dropdown .dropdown-menu button:hover {
   display: flex;
   flex-direction: row;
   margin: 0, 5em;
-  margin-left: 10em;
+  margin-left: 17%;
   padding-bottom: 3%;
 }
 .tickets__vip h4, .tickets__vip p, .tickets__vip button {
@@ -626,6 +626,26 @@ footer {
     padding: 1em;
   }
 
+  .tickets__general div {
+    display: flex;
+    flex-direction: column;
+  }
+  .tickets__general div h4, .tickets__general div p, .tickets__general div button {
+    width: 80%;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .tickets__vip div {
+    display: flex;
+    flex-direction: column;
+  }
+  .tickets__vip div h4, .tickets__vip div p, .tickets__vip div button {
+    width: 80%;
+    text-align: center;
+    padding: 2%;
+  }
+
   .lineup__imgs .lineup__arribaimg h1 {
     font-size: 200%;
   }
@@ -646,6 +666,24 @@ footer {
 
   .nav__links {
     display: none;
+  }
+
+  .tickets__general div {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .tickets__general div h4, .tickets__general div p, .tickets__general div button {
+    width: 50%;
+    height: 80%;
+  }
+
+  .tickets__vip div {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .tickets__vip div h4, .tickets__vip div p, .tickets__vip div button {
+    width: 50%;
+    height: 80%;
   }
 }
 @media (min-width: 750px) {
