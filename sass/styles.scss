@@ -751,7 +751,7 @@ header .cta{
 
 
 .nosotros__info{
-    padding: 1em;
+    padding: 2em;
 }
 
 .footer__logo{
@@ -770,6 +770,12 @@ header .cta{
 
 .nav__links{
     display:none;
+}
+
+.index__vendidos{
+    p{
+        padding: 1em;
+    }
 }
 
 
@@ -801,6 +807,9 @@ header .cta{
     }
 }
 
+.nosotros__info{
+    padding: 2em;
+}
 } 
 
 

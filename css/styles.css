@@ -685,7 +685,7 @@ footer {
   }
 
   .nosotros__info {
-    padding: 1em;
+    padding: 2em;
   }
 
   .footer__logo {
@@ -700,6 +700,10 @@ footer {
 
   .nav__links {
     display: none;
+  }
+
+  .index__vendidos p {
+    padding: 1em;
   }
 
   .tickets__general div {
@@ -725,6 +729,10 @@ footer {
   }
   .lineup__dj-fondo div ul li {
     font-size: 100%;
+  }
+
+  .nosotros__info {
+    padding: 2em;
   }
 }
 @media (min-width: 750px) {
