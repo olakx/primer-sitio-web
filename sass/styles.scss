@@ -409,33 +409,55 @@ header{
 /*Main Pagina Tickets*/
 
 /*Main Pagina LINEUP*/
-.lineup__header{
-    background: linear-gradient(rgba(5, 7, 12, 0.55),rgba(5, 7, 12, 0.55)), url(../resources/images/lineup_header_largo1.jpg);
-    background-size: 100% 100%;
+
+
+.lineup__dj-fondo{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../resources/images/lineup_fondo.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 80%;
     div{
-        padding-top: 14.5%;
-        padding-bottom: 25%;
-        h2{
-            text-align: center;
-            color: white;
-            text-transform: uppercase;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    ;
-            font-weight: 700;
+        h3{
+            margin-left: 10%;
+            color: rgb(0, 204, 255);
+            margin-right: 10%;
+            font-weight: 600;
+            padding-top: 4%;
+            padding-bottom: 3%;
+            border:1px double white;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-radius: 10%;
+            font-size: 222%;
         }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 7%;
+            margin-bottom: 0%;
+            margin-top: 5%;
+            li{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 600;
+                color: #fff;
+                padding: 1%;
+                margin: 1%;
+                margin-right: 3%;
+            }
+        } 
     }
-}
-.lineup__text{
-    .lineup__dias{
-        padding-top: 5%;
-        text-align: center;
-        img{
-            padding-left: 5%;
-            padding-right: 5%;
-            width: 100%;
-            height: auto;
-        }
+
+.lineup__fecha{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(rgba(8, 134, 218, 0.9)rgba(7, 131, 214, 0.9));
+    margin-top: 5%;
+    color: white;
+    border: 3px inset rgb(0, 204, 255);
+    display: inline-block;
+    padding: 1%;
+    margin-left: 40%;
+    margin-bottom: 3%;
     }
 }
 
@@ -702,9 +724,16 @@ header .cta{
 
 
 
-.lineup__imgs .lineup__arribaimg h1{
-        font-size: 200%;     
+.lineup__dj-fondo{
+    div ul{
+        margin: 0%;
+        li{
+            font-size: 90%;
+            padding: 5%;
+        }
+    }
 }
+
 
 
 
@@ -721,7 +750,7 @@ header .cta{
 }
 
 
-@media (min-width: 541px) and (max-width: 920px){
+@media (min-width: 541px) and (max-width: 923px){
 *{
     font-size: 20px;
     font-weight: 400;
@@ -753,6 +782,12 @@ header .cta{
     }
 }
 
+.lineup__dj-fondo div ul {
+    margin: 0%;
+    li{
+        font-size: 100%; 
+    }
+}
 
 } 
 
@@ -773,7 +808,7 @@ header .cta{
 }
 
 
-@media (min-width: 921px) and (max-width: 1200px){
+@media (min-width: 924px) and (max-width: 1200px){
 *{
     font-size: 18px;
     font-weight: 400;
