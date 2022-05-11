@@ -653,6 +653,12 @@ footer {
     text-align: center;
     padding: 2%;
   }
+  .tickets__general div p {
+    margin-bottom: 2%;
+  }
+  .tickets__general div button {
+    margin-bottom: 25%;
+  }
 
   .tickets__vip div {
     display: flex;
@@ -662,6 +668,12 @@ footer {
     width: 80%;
     text-align: center;
     padding: 2%;
+  }
+  .tickets__vip div p {
+    margin-bottom: 2%;
+  }
+  .tickets__vip div button {
+    margin-bottom: 25%;
   }
 
   .lineup__dj-fondo div ul {
